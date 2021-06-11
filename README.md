@@ -1,11 +1,11 @@
 # Support
-To submit the solutions to the next three task, forke this repository to your own github account, push changes to it and send me the link to the github repo which should be reviewed.
+To submit the solutions to the next three tasks, fork this repository to your own github account, push changes to it and send me the link to the github repo which should be reviewed.
 
 
 Task 1
 ======
 
-The customer reports a weird Varnish behaviour and s/he can't explain what is going on. To the support case is attached a varnishgather, whcih can be found here: https://filebin.varnish-software.com/equnbmapw2t23bbt-Tsupport_case
+The customer reports a weird Varnish behaviour and s/he can't explain what is going on. To the support case is attached a varnishgather, which can be found here: https://filebin.varnish-software.com/equnbmapw2t23bbt-Tsupport_case
 
 1. Review the gather to understand what is happening with Varnish.
 2. If/when you have understood what is wrong with the Varnish installation, describe the problem and a possible workaround/solution.
