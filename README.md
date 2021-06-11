@@ -1,4 +1,5 @@
 # Support
+To submit the solutions to the next three task, forke this repository to your own github account, push changes to it and send me the link to the github repo which should be reviewed.
 
 
 Task 1
@@ -7,9 +8,9 @@ Task 1
 The customer reports a weird Varnish behaviour and s/he can't explain what is going on. To the support case is attached a varnishgather, whcih can be found here: https://filebin.varnish-software.com/equnbmapw2t23bbt-Tsupport_case
 
 1. Review the gather to understand what is happening with Varnish.
-2. If/when you have understood what is wrong with the Varnish installation, open a pull request for this repository pointting out the problem and a possible workaround/solution.
+2. If/when you have understood what is wrong with the Varnish installation, describe the problem and a possible workaround/solution.
 
-Hint:
+Hints:
 1. varnishgahter script is open source and lives here: https://github.com/varnish/varnishgather
 2. Chapter 7 of the book is good starting point to understand what to look at when debugging
 
@@ -19,11 +20,11 @@ Task 2
 
 A customer sends a support e-mail
 
-__Subject
+# Subject
 
 Varnish Brotli Support
 
-__Body
+# Body
 
 Hi Varnish Support,
 
@@ -34,11 +35,11 @@ Christopher Taylor
 Spa and Pools LLC 
 
 
-__Resources
+# Resources
 
 None
 
-__Objective
+# Objective
 
 In a Pull Request write a response to the customer. The response for this should include the solution and not be an escalation to tier 3.
 
