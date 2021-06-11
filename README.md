@@ -20,11 +20,11 @@ Task 2
 
 A customer sends a support e-mail
 
-# Subject
+__Subject
 
 Varnish Brotli Support
 
-# Body
+__Body
 
 Hi Varnish Support,
 
@@ -35,11 +35,11 @@ Christopher Taylor
 Spa and Pools LLC 
 
 
-# Resources
+__Resources
 
 None
 
-# Objective
+__Objective
 
 In a Pull Request write a response to the customer. The response for this should include the solution and not be an escalation to tier 3.
 
