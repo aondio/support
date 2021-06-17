@@ -1,0 +1,11 @@
+vcl 4.1;
+import brotli;
+sub vcl_init {
+ brotli.init(BOTH, transcode = true);
+}
+sub vcl_backend_response {
+ if (beresp.http.content-encoding ~ "gzip" ||
+ beresp.http.content-type ~ "text") {
+ brotli.compress();
+ }
+}
