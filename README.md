@@ -2,15 +2,15 @@ Task 1 - answer
 ======
 
 I noticed one problem that might be causing weird behavior from Varnish. 
-Expire header is holding the date very far back in the past: Thu, 01 Jan 1970 00:00:00 GMT. In addition the Cacho-Control is set no-cache, no-store, must-revalidate.
+Expire header is holding the date very far back in the past: Thu, 01 Jan 1970 00:00:00 GMT. In addition the Cache-Control is set to no-cache, no-store, must-revalidate.
 
 This causes the data object to expire immediately which results in them not being cached which leads to origin server being constantly pulled for data which renders the Varnish solution obsolete.
 
 There are three possible options that might solve this problem. 
 
-One is to fix the Expires header to show date in the future that would be suitable for the customer.
+One is to fix the Expires header to show date in the future, that would be suitable for the customer.
 
-Second possibility is to delete Expires header and set the s-maxage in Cache-Control header for a suitable amount of time in seconds (3600 for and hour, 864000 for a day etc.)
+Second possibility is to delete Expires header and set the s-maxage in Cache-Control header for a suitable amount of time in seconds (3600 for an hour, 864000 for a day etc.)
 
 Third possibility is to use extended grace period using below command:
 vcl 4.1;
