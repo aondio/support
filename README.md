@@ -15,6 +15,16 @@ Hints:
 2. Chapter 7 of the book is good starting point to understand what to look at when debugging
 
 
+While looking over file 187_varnishadm_--_ panic_show from the included gather varnishgather.dad-2021-06-11.tar.gz indicates a Panic at: Fri, 11 Jun 2021 08:48:31 GMT.
+
+Also runing varnishlog -r varnishlog.raw, the time stamp for Expires: Thu, 01 Jan 1970 00:00:00 GMT doesn't seem right.
+
+My assumption would be to check/correct what's causing the incorrect time stamp as well to check the CMOS or system battery.
+
+Reference
+https://info.varnish-software.com/blog/how-to-debug-and-fix-varnish
+
+
 Task 2
 ======
 
@@ -50,4 +60,23 @@ Task 3
 ![CDN architecture](https://user-images.githubusercontent.com/6757531/121661483-86cd9780-caa4-11eb-8081-d6ebc6da2800.png)
 
 This is a CDN architecture, please describe the role of each component.
+
+
+GeoDNS /traffic router - Determines which is the best route from one location to another, Routing traffic based on specific Geo location to a given requesting IP address.
+
+Clients - Termination of client connections on the edge.
+
+PoP - Points of presence, data center sites where they host a number of caching nodes.
+
+Edge node - Stores hot content in memory and routes cache misses to the storage tier via consistent hashing.
+
+Storage node - Responsible for storing most of the content catalog.
+
+Shield - Helps protect your origin servers and offload some of the request.
+
+Origin - Represents the original web servers.
+
+References
+https://dzone.com/articles/build-your-own-cdn-in-5-steps
+Varnish 6 by Example book, ch 9
 
