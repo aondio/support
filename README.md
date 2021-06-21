@@ -15,7 +15,7 @@ Hints:
 2. Chapter 7 of the book is good starting point to understand what to look at when debugging
 
 
-While looking over file 187_varnishadm_--_ panic_show from the included gather varnishgather.dad-2021-06-11.tar.gz indicates a Panic at: Fri, 11 Jun 2021 08:48:31 GMT.
+While looking over file 187_varnishadm_--\_panic_show from the included gather varnishgather.dad-2021-06-11.tar.gz indicates a Panic at: Fri, 11 Jun 2021 08:48:31 GMT.
 
 Also runing varnishlog -r varnishlog.raw, the time stamp for Expires: Thu, 01 Jan 1970 00:00:00 GMT doesn't seem right.
 
