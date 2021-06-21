@@ -22,7 +22,7 @@ Also runing varnishlog -r varnishlog.raw, the time stamp for Expires: Thu, 01 Ja
 My assumption would be to check/correct what's causing the incorrect time stamp as well to check the CMOS or system battery.
 
 Reference
-https://info.varnish-software.com/blog/how-to-debug-and-fix-varnish
+- https://info.varnish-software.com/blog/how-to-debug-and-fix-varnish
 
 
 Task 2
@@ -58,6 +58,7 @@ Hello Christopher,
 
 Brotli support is enabled via the API below.
 
+```
 import brotli;
 
 sub vcl_init {
@@ -79,6 +80,7 @@ sub vcl_backend_response {
 sub vcl_deliver {
   unset resp.http.vary;
 }
+```
 
 For further explanation see here: https://docs.varnish-software.com/varnish-cache-plus/vmods/brotli/
 
@@ -112,6 +114,6 @@ Shield - Helps protect your origin servers and offload some of the request.
 Origin - Represents the original web servers.
 
 References
-https://dzone.com/articles/build-your-own-cdn-in-5-steps
-Varnish 6 by Example book, ch 9
+- https://dzone.com/articles/build-your-own-cdn-in-5-steps
+- Varnish 6 by Example book, ch 9
 
