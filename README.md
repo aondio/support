@@ -58,7 +58,7 @@ Hello Christopher,
 
 Brotli support is enabled via the API below.
 
-```
+```vlc
 import brotli;
 
 sub vcl_init {
