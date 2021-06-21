@@ -86,9 +86,9 @@ For further explanation see here: https://docs.varnish-software.com/varnish-cach
 
 Let us know if you have further questions.
 
-Kind Regards,
-Joseph
-Varnish Support 
+Kind Regards,  
+Joseph  
+Varnish Support  
 
 
 Task 3
