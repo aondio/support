@@ -99,7 +99,7 @@ Task 3
 This is a CDN architecture, please describe the role of each component.
 
 
-GeoDNS /traffic router - Determines which is the best route from one location to another, Routing traffic based on specific Geo location to a given requesting IP address.
+GeoDNS /traffic router - Determines which is the best route from one location to another, routing traffic based on specific Geo location to a given requesting IP address.
 
 Clients - Termination of client connections on the edge.
 
