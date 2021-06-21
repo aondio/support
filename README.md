@@ -54,6 +54,41 @@ __Objective
 In a Pull Request write a response to the customer. The response for this should include the solution and not be an escalation to tier 3.
 
 
+Hello Christopher,
+
+Brotli support is enabled via the API below.
+
+import brotli;
+
+sub vcl_init {
+  brotli.init(encoding = BOTH);
+}
+
+sub vcl_recv {
+  if (req.http.accept-encoding ~ "br") {
+     set req.http.x-ae = "br";
+  } else {
+     set req.http.x-ae = "gzip";
+  }
+}
+
+sub vcl_backend_response {
+  set beresp.http.vary = "x-ae";
+}
+
+sub vcl_deliver {
+  unset resp.http.vary;
+}
+
+For further explanation see here: https://docs.varnish-software.com/varnish-cache-plus/vmods/brotli/
+
+Let us know if you have further questions.
+
+Kind Regards,
+Joseph
+Varnish Support 
+
+
 Task 3
 ======
 
